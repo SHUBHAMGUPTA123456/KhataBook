@@ -1,0 +1,70 @@
+name: khata_book
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.8
+  get: ^4.7.3
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  intl: ^0.20.2
+  url_launcher: ^6.3.2
+  flutter_contacts: ^1.1.9+2
+  permission_handler: ^12.0.1
+  flutter_launcher_icons: ^0.14.4
+  path_provider: ^2.1.5
+  open_filex: ^4.7.0
+  csv: ^6.0.0
+  pdf: ^3.11.3
+  printing: ^5.14.2
+  device_info_plus: ^12.3.0
+  sleek_circular_slider: ^2.1.0
+  image_picker: ^1.2.1
+  syncfusion_flutter_pdf: ^33.1.44
+  file_picker: ^10.3.10
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_launcher_khata_book.png"
+  adaptive_icon_background: "#000000"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+
+  fonts:
+    - family: RobotoRegular
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+
