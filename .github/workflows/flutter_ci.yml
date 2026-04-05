@@ -38,3 +38,6 @@ jobs:
         with:
           name: app-release
           path: build/app/outputs/flutter-apk/app-release.apk
+
+      - name: Analyze project
+        run: flutter analyze || true
