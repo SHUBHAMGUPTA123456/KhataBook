@@ -95,38 +95,41 @@ class ReportScreen extends StatelessWidget {
             ),
           ),
 // Import Button Row
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-            child: Obx(() => ElevatedButton.icon(
-              icon: reportCtrl.isImporting.value
-                  ? const SizedBox(
-                width: 18,
-                height: 18,
-                child: CircularProgressIndicator(
-                  color: AppColors.white,
-                  strokeWidth: 2,
+          Visibility(
+            visible: false,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              child: Obx(() => ElevatedButton.icon(
+                icon: reportCtrl.isImporting.value
+                    ? const SizedBox(
+                  width: 18,
+                  height: 18,
+                  child: CircularProgressIndicator(
+                    color: AppColors.white,
+                    strokeWidth: 2,
+                  ),
+                )
+                    : const Icon(Icons.file_upload, size: 18),
+                label: Text(
+                  reportCtrl.isImporting.value
+                      ? reportCtrl.importStatus.value
+                      : 'Import Transactions',
+                  style: const TextStyle(fontSize: 13),
                 ),
-              )
-                  : const Icon(Icons.file_upload, size: 18),
-              label: Text(
-                reportCtrl.isImporting.value
-                    ? reportCtrl.importStatus.value
-                    : 'Import Transactions',
-                style: const TextStyle(fontSize: 13),
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.purple.withValues(alpha: 0.75),
-                foregroundColor: AppColors.white,
-                minimumSize: const Size(double.infinity, 48),
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.purple.withValues(alpha: 0.75),
+                  foregroundColor: AppColors.white,
+                  minimumSize: const Size(double.infinity, 48),
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
                 ),
-              ),
-              onPressed: reportCtrl.isImporting.value
-                  ? null
-                  : () => _showImportDialog(),
-            )),
+                onPressed: reportCtrl.isImporting.value
+                    ? null
+                    : () => _showImportDialog(),
+              )),
+            ),
           ),
           // Transactions List
           Expanded(
