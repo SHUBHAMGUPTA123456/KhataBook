@@ -69,7 +69,10 @@ flutter run
 ## 📷 Screenshots
 
 <img width="1080" height="2400" alt="HomeScreen" src="https://github.com/user-attachments/assets/f0113b2b-d9ab-46ae-b7ab-f95bcb593245" />
-
+<img width="1080" height="2400" alt="UserTransaction" src="https://github.com/user-attachments/assets/b8bee1e3-f426-48a5-9384-0ee8de285ad7" />
+<img width="1080" height="2400" alt="AddCustomerSupplier" src="https://github.com/user-attachments/assets/0fc9fb39-a99d-49d9-9fec-4981d7348fe2" />
+<img width="1080" height="2400" alt="AddTransaction" src="https://github.com/user-attachments/assets/8fe0221a-065b-4baf-9158-72d0cd71a366" />
+<img width="1080" height="2400" alt="TransactionHistory" src="https://github.com/user-attachments/assets/799517a0-3090-4ed5-9788-b84eaf01d5ee" />
 
 ---
 
