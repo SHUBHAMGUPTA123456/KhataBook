@@ -68,11 +68,8 @@ flutter run
 
 ## 📷 Screenshots
 
-![HomeScreen.png](../../Desktop/HomeScreen.png)
-![AddCustomerSupplier.png](../../Desktop/AddCustomerSupplier.png)
-![AddTransaction.png](../../Desktop/AddTransaction.png)
-![UserTransaction.png](../../Desktop/UserTransaction.png)
-![TransactionHistory.png](../../Desktop/TransactionHistory.png)
+<img width="1080" height="2400" alt="HomeScreen" src="https://github.com/user-attachments/assets/f0113b2b-d9ab-46ae-b7ab-f95bcb593245" />
+
 
 ---
 
