@@ -43,7 +43,7 @@ The application follows a clean and scalable structure:
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/KhataBook.git
+git clone https://github.com/SHUBHAMGUPTA123456/KhataBook.git
 ```
 
 Navigate to the project directory:
